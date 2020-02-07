@@ -19,5 +19,9 @@ day = 1
 while start < record:
     print(f'{day}-й день: {start}')
     start = start + 0.1*start
+    start = float('{:.2f}'.format(start))
     day = day + 1
+
+print(f'{day}-й день: {start}')
+
 print(f'На {day}-й день спортсмен достиг результата - не менее {record} км.')
